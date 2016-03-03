@@ -1,79 +1,153 @@
-<!DOCTYPE html> 
-<html> 
-    <head>
-          <meta charset="utf-8">
-          <title> Quoc Huynh</title>
-          
-            <style>
-      
-                Body {
-                  background-color:black
-                }
-                .Mainbar {
-                        color: rgb(48,654,76);
-                        font-family:cursive;
-                        }
-                h1 {
-                    border:double grey; 
-                    }
-                
-                #p1 {
-                    color:aqua;
-                }
-                
-                #p2 {
-                    color:gold;
-                }
-                
-                #title{
-                    text-align:center;
-                }
-                .Navbar{
-                    color:white;
-                }
-                
-                .lists{
-                    color:teal;
-                }
-            </style>
-    </head>
-    
-    <body>
-               <!-- links here -->
-         
-         <div class="Navbar">
-    
-             <ul id="list">
-                <li> <a class="lists" target="_blank" Href=""> About me!</a> </li>
-    
-                <li> <a  class="lists" target="_blank" Href="/contact.html">Contacts</a> </li>
-    
-                <li> <a class="lists" target="_blank" href="/portfolio.html"> Portfolio!</a> </li>  
-            </ul>
-    
-        </div>
-    
-        <div class="Mainbar">
-    
-            <h1 class="Main" id="title">Quoc Huynh</h1>
-             
-             <!-- Main bar descpriton starts here -->
-    
-            <h2 class="Main">Quoc Himself</h2>
-    
-               <p class="Main" id="p1">Hello! My name is what the title says.  A quick background of me is that I was born and raised in San Jose. I attend a small school named Alpha: Cindy Avitia. I like to play soccer, hang out with my friends, and get good grades... If you wanna know more about me, please click on the "About Me!" link above. </p> 
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO: Update Title -->
+  <title>Quoc Huynh's Web Page</title>
   
-           
-            
-            <img id="YOLO" src="http://cdn.playbuzz.com/cdn/36038e1c-97d8-4ac9-95f7-8a5d12918579/b919f85f-3ac0-4d2b-bb76-a2da37bbaf2c.gif">
+  <!-- Include the following stylesheet (controls sytle of navbar and footer) -->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  
+  <!-- TODO: Change CSS colors and image so that it matches your desired theme -->
+  <style>
+    body {
+      font-family: Verdana;
+      background-color:black;
+    }
     
-    
-            <h2 class="Main">Schooling</h2>
-    
-                <p class="Main" id="p2">I currently go to a small school called Alpha: Cindy Avitia. The people there are great and has been impacting my life. I known my fellow classmates since 7th grade, and they are truly my family. The education is great! Everything there is amazing. I'm just blessed to be here. </p>
-                
-        </div>  
+    /* TODO: Make sure the height of your page is big enough */
+    .main {
+      clear: left;
+      min-width: 600px;
+      max-width: 800px;
+      height:650px;
+      margin:0 auto;
+    }
 
-    </body>
-  
+    .main-page{
+      display: block;
+      float:right;
+      background-color:white;
+      height:100%;
+      width:75%;
+      box-sizing:border-box;
+    }
+
+    .sidebar {
+      box-sizing:border-box;
+      padding:10px;
+      float:left;
+      width:25%;
+      height:100%;
+      background-color:black;
+    }
+
+    .sidebar-nav{
+      margin: 15px 0px;
+      color:white;
+    }
+
+    .sidebar li {
+      margin: 20px 5px 0px;
+    }
+
+    .sidebar ul ul li{
+      margin: 10px 15px 0px;
+      font-size:0.8em;
+    }
+
+    .sidebar ul ul li a{
+      text-decoration: none;
+      color: rgb(48, 255, 93);
+    }
+
+    .sidebar ul ul li a:hover{
+      color: white;
+    }
+
+    .image-container {
+      height:300px;
+      width:100%;
+      position: relative;
+      /* TODO: Update the following image */
+      background-image: url("http://cdn.playbuzz.com/cdn/36038e1c-97d8-4ac9-95f7-8a5d12918579/b919f85f-3ac0-4d2b-bb76-a2da37bbaf2c.gif");
+      background-repeat: no-repeat;
+      background-size: 100% 300px;
+    }
+
+    .main-title {
+      margin: 10px 15px;
+      font-size: 30px;
+    }
+
+    .left-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .right-panel{
+      box-sizing: border-box;
+      width: 50%;
+      float:left;
+      padding:20px;
+    }
+
+    .sub-title {
+      text-align: center;
+      color:green;
+    }
+
+    .text-info {
+      font-size: 0.8em;
+      margin: 20px;
+      color:green;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="navigation">
+            <!-- TODO: Ensure that your Navbar is correct -->
+            <li class="active"><a href="">Home</a></li>
+            <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <ul class="sidebar-nav">
+                <!-- TODO: Update the recent projects -->
+                <li><strong>Recent Projects</strong></li>
+                <ul>
+                    <li><a href="./portfolio.html">Shooting Star</a></li>
+                    <li><a href="./portfolio.html">Maze Game</a></li>
+                </ul>
+            </ul>
+        </div>
+        <div class="main-page">
+            <div class="image-container"></div>
+            
+            <!-- TODO: Update the page title -->
+            <h1 class="main-title">Quoc Huynh's Homepage</h1>
+            <!-- TODO: Update the left-panel and right-panel with info from your 90s website -->
+            <div class="left-panel">
+                <h2 class="sub-title">My Background</h2>
+                  <p class="text-info">Hello! My name is what the title says.  A quick background of me is that I was born and raised in San Jose. I attend a small school named Alpha: Cindy Avitia. I like to play soccer, hang out with my friends, and get good grades. I love to hear rap and hip hop. King Kendrick for the win!
+        </div>
+            <div class="right-panel">
+                <h2 class="sub-title">What I Do Now</h2>
+                <p class="text-info"> I am the founding class of Alpha Cindy Avitia, and I am currently trying to survive my first year in Highschool. I always work on my homework and projects.
+            </div>
+
+            </div>
+        <!-- TODO: Add anything you want to the footer -->
+        <div class="footer">
+        </div>
+    </div>
+    
+    
+
+</body>
 </html>
