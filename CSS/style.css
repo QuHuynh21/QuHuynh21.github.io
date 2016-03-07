@@ -48,6 +48,41 @@
         background-color: #4CAF50;
         color: white;
     }
+    
+    
+    
+        .navigation{
+      list-style:none;
+      background-color:green;
+    }
+    .navigation li {
+      float:left;
+    }
+    .navigation a { 
+      display: block;
+      padding:8px;
+      background-color: #dddddd;
+      text-decoration:none;
+    }
+    
+    .navbar {
+      background-color:#dddddd;
+      width:500px;
+    }
+    
+    .navigation li {
+    list-style-type: none;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     /* END NAVBAR CSS */
     
     /* FOOTER */
