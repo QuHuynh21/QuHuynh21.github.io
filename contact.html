@@ -4,7 +4,7 @@
      
      <style>
      body {
-         text-align: center;
+        
          background: url(https://res.cloudinary.com/teepublic/image/private/s--N5vORX1y--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1446244538/production/designs/297291_2);
          color: white; 
          font-family: Helvetica;
@@ -18,27 +18,36 @@
          font-size: 24px;
      }
      
-     input { 
-         border: 0; 
-         font-size: 18px; 
-         color: black; 
-         padding: 12px; 
-     }
+   .navigation li {
+      float:left;
+    }
+    .navigation a { 
+      display: block;
+      padding:8px;
+      background-color: aqua;
+      text-decoration:none;
+    }
      
-     input[type="submit"] { 
-         background: limegreen; 
-         color: black; 
-     }
      </style>
 
 </head>
 
 <body>
+    
+    
+     <div class="navbar">
+        <ul class="navigation">
+             <!-- TODO: Ensure that your Navbar is correct -->
+            <li><a href="./index.html">Home</a></li>
+            <li ><a href="">Portfolio</a></li>
+            <li class="active"><a href="./contact.html">Contacts</a></li>
+        </ul>
+    </div>
+    
+    
 
 <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Dreamville-Records.jpg/180px-Dreamville-Records.jpg">
-<p>Hi! if you needd my contacts, use my email! Quoc.huynh@alphapublicschools.org </p>
-<input type="email" placeholder="Email">
-<input type="submit">
+<p>Hi! if you needd my contacts, use my email! <a href="https://mail.google.com/mail/u/0/#inbox">Quoc.huynh@alphapublicschools.org </p>
 
 </body>
     </html>
