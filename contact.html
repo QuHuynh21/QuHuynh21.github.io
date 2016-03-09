@@ -19,29 +19,46 @@
          font-size: 24px;
      }
      
-     
-         .navigation{
-      list-style:none;
-      background-color:green;
+.nav a {
+      text-decoration: none;
     }
-    .navigation li {
-      float:left;
+
+    .navbar-outside {
+      display:block;
+      background-color: black;
+      height:80px;
     }
-    .navigation a { 
-      display: block;
-      padding:8px;
-      background-color: #dddddd;
-      text-decoration:none;
-    }
-    
+
     .navbar {
-      background-color:#dddddd;
-      width:500px;
+      display:block;
+      background-color: black;
+      height:80px;
+      margin:0 auto;
+      min-width:600px;
+      max-width:800px;
+    }
+
+    .navigation li {
+      padding: 30px 15px;
+      list-style: none;
+      text-decoration: none;
+      float:left;
+      height: 20px;
+    }
+
+    .navigation li a {
+      text-decoration: none;
+      color:#FFFFFF;
+    }
+
+    .navigation li:hover {
+      background-color: lime;
     }
     
-    .navigation li {
-    list-style-type: none;
-}
+    .active {
+        background-color: green;
+        color: white;
+    }     
 
 #alpha {
    
